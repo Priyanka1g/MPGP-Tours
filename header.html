@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/47386a68d4.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="./header.css">
+</head>
+
+<body>
+    <div class="header-dark p-0 h-100">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-search p-0">
+            <div class="container-fluid">
+                <a class="col-2 navbar-brand m-0" href="#"><img src="MPGP.png" width="95%"></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                        <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Explore</a>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" role="presentation" href="NorthIndia.html">North India</a>
+                                <a class="dropdown-item" role="presentation" href="#">South India</a>
+                                <a class="dropdown-item" role="presentation" href="#">East India</a>
+                                <a class="dropdown-item" role="presentation" href="#">West India</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                            <a href="#" class="login">Log In</a>
+                        </span>
+                    <a class="btn btn-light action-button" role="button" href="#">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <div class="container hero h-100">
+            <div class="row h-100">
+                <div class="col-md-8 offset-md-2 d-flex align-items-center mb-3">
+                    <h1 id="travel_quote" class="text-center">“Travelling – it leaves you speechless, then turns you into a storyteller”
+                        <br>– <i>Ibn Battuta</i>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="container-fluid p-0">
+        <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="about">
+                                ABOUT US
+                            </h6>
+                            <p>
+                                MPGP TOURS is a tour guide which provides information according to regions of India and make it easy for the tourist to explore India in a better way&#46;
+                            </p>
+                        </div>
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold" id="contact">Contact</h6>
+                            <p><i class="fa fa-home mr-3" aria-hidden="true"></i>New Delhi, 110063, India</p>
+                            <p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p><i class="fa fa-phone mr-3"></i> + 91 1234567488</p>
+                            <p><i class="fa fa-print mr-3"></i> + 91 1234567489</p>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fa fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+
+                            <!-- Github -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright:
+                <a class="text-white" href="#">MPGP TOURS</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const quotes = new Array('“Travelling – it leaves you speechless, then turns you into a storyteller”<br>– <i>Ibn Battuta</i>', 'TRAVEL!! <br> Before you run out of time.', '"We travel, some of us forever to seek other states, other lives, other souls"<br>-<i>Anais Nin</i>', 'Job fill your pocket <br>But<br>adventures fill your soul')
+        const quote_element = document.getElementById('travel_quote');
+        var count = 1;
+        setInterval(
+            function() {
+                if (count == quotes.length) count = 0;
+                quote_element.innerHTML = quotes[count];
+                count++;
+            }, 4000
+        )
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
